@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -ne "$(cut -c-1 <<< "$input_string")\n"
+cut -c 1 | paste -s -d ''
