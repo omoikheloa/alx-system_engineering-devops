@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for task 1"""
+"""Task 1 Module"""
 
 
 def top_ten(subreddit):
