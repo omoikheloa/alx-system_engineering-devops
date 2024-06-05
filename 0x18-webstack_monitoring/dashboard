@@ -1,0 +1,7 @@
+API_KEY="4a59f0fa6c1b2777955f25dbee92e6c7"
+APP_KEY="737ab0214f8dd5c795cc7b428bb3ca301b8d0fe1"
+
+curl -X GET "https://api.datadoghq.com/api/v1/dashboard" \
+     -H "Content-Type: application/json" \
+     -H "DD-API-KEY: ${API_KEY}" \
+     -H "DD-APPLICATION-KEY: ${APP_KEY}" | jq '.dashboards[] | select(.title == "Web-01 Dashboard") | .id'
